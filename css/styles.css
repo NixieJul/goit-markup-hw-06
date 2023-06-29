@@ -404,6 +404,7 @@ img {
   gap: 24px;
   justify-content: center;
   padding-top: 8px;
+  margin: auto;
 }
 
 .social-item {
@@ -1330,7 +1331,7 @@ img {
 
   .sol {
     padding: 188px 0;
-    max-width: 1440px;
+        max-width: 100%;
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
@@ -1641,6 +1642,7 @@ img {
 }
 
 .overlay-text {
+  display: block;
   position: absolute;
   font-size: 16px;
   line-height: 1.5;
