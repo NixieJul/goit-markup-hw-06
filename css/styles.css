@@ -453,7 +453,6 @@ img {
 .customers-item {
   width: calc((100% - 16px) / 2);
   height: 88px;
-  transition: color var(--transition), border-color var(--transition);
 }
 
 .customer-link {
@@ -699,32 +698,13 @@ img {
   color: var(--text);
 }
 
-.portfolio-box {
-  position: relative;
-  overflow: hidden;
-}
 
 .overlay-text {
   display: none;
-  position: absolute;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--light);
-  background: var(--primary-brand);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 40px 32px;
-  transform: translateY(100%);
-  transition: transform var(--transition);
 }
 
-.portfolio-link:hover .overlay-text,
-.portfolio-link:focus .overlay-text {
-  transform: translateY(0);
-}
+
+/*!---------MODAL----*/
 
 .backdrop {
   position: fixed;
@@ -903,9 +883,6 @@ img {
     fill var(--transition);
 }
 
-.check-icon {
-}
-
 .input-check:checked + .check-label span {
   background-color: var(--pressed-state);
   border: none;
@@ -950,8 +927,7 @@ img {
     display: flex;
     gap: 40px;
   }
-  .header-menu-item {
-  }
+
   .header-menu-link {
     font-weight: 500;
     font-size: 16px;
@@ -970,7 +946,6 @@ img {
     content: "";
     position: absolute;
     left: 0;
-
     width: 100%;
     height: 4px;
     border-radius: 2px;
@@ -988,8 +963,7 @@ img {
     gap: 12px;
     margin-left: auto;
   }
-  .address-menu-item {
-  }
+ 
   .address-menu-link {
     font-weight: 400;
     font-size: 12px;
@@ -1025,7 +999,6 @@ img {
 
   .title-sol {
     font-size: 56px;
-    font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
     max-width: 496px;
@@ -1061,7 +1034,6 @@ img {
   }
 
   .team-menu {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 64px 24px;
@@ -1076,12 +1048,8 @@ img {
     padding: 32px 0;
   }
 
-  /**-------CUSTOMERS------*/
 
-  .customers {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
+  /**-------CUSTOMERS------*/
 
   .customers-list {
     gap: 72px 24px;
@@ -1094,22 +1062,17 @@ img {
   /**--------FOOTER------------*/
 
   .footer-container {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 108px;
   }
 
   .footer-form {
-    display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 16px;
   }
 
   .subsribe {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
   }
 
@@ -1123,125 +1086,22 @@ img {
 
   /**-----FILTERS-------*/
 
-  .portfolio-section {
-    padding-top: 96px;
-    padding-bottom: 120px;
-  }
-
-  .filtr-container {
-    justify-content: center;
-  }
-
   .filter-menu {
-    display: flex;
-    margin-bottom: 72px;
-    margin-left: auto;
-    margin-right: auto;
     gap: 24px;
     justify-content: center;
-    align-items: center;
-  }
-
-  .button-filter {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--primary-brand);
-    background: var(--light);
-    cursor: pointer;
-    border: 1px solid #e7e9fc;
-    display: block;
-    border-radius: 4px;
-    padding: 12px 24px;
-  }
-
-  .button-filter:hover,
-  .button-filter:focus {
-    background-color: var(--pressed-state);
-    color: var(--white-background);
-    border: 1px solid var(--pressed-state);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 
   /**--------IMAGES-----------*/
 
   .portfolio-menu {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 48px 24px;
   }
   .portfolio-item {
-    background: #ffffff;
     width: calc((100% - 24px) / 2);
   }
 
-  .portfolio-link {
-    display: block;
-    transition: box-shadow var(--transition);
-  }
-
-  .portfolio-link:hover,
-  .portfolio-link:focus {
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  }
-
-  .portfolio-item:hover {
-  }
-
-  .text-container {
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
-  }
-
-  .portfolio-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--dark);
-    margin-bottom: 8px;
-  }
-  .portfolio-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--text);
-  }
-
-  .portfolio-box {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .overlay-text {
-    position: absolute;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--light);
-    background: var(--primary-brand);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 40px 32px;
-    transform: translateY(100%);
-    transition: transform var(--transition);
-  }
-
-  .portfolio-link:hover .overlay-text,
-  .portfolio-link:focus .overlay-text {
-    transform: translateY(0);
-  }
-}
 
 /*!---------DESKTOP-------*/
 @media screen and (min-width: 1158px) {
@@ -1344,14 +1204,9 @@ img {
 
   .title-sol {
     font-size: 56px;
-    font-weight: 700;
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
-    color: var(--white-background);
     max-width: 496px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 48px;
   }
 
@@ -1375,7 +1230,6 @@ img {
   }
 
   .goals-menu {
-    display: flex;
     flex-wrap: nowrap;
     gap: 24px;
   }
@@ -1395,14 +1249,8 @@ img {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--dark);
-    margin-bottom: 8px;
   }
   .goals-item-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--text);
     width: 264px;
   }
 
@@ -1437,18 +1285,12 @@ img {
   }
 
   .team-menu {
-    display: flex;
     flex-direction: row;
     gap: 24px;
   }
 
   .team-menu-item {
     width: calc((100% - 72px) / 4);
-  }
-
-  .tmenu-container {
-    display: flex;
-    padding: 32px 0;
   }
 
   .social-link:hover,
@@ -1459,7 +1301,6 @@ img {
   /**----------CUSTOMERS---------*/
 
   .customers-list {
-    display: flex;
     gap: 24px;
   }
   .customers-item {
@@ -1478,7 +1319,6 @@ img {
   }
 
   .customer-icon {
-    fill: currentColor;
     transition: color var(--transition);
   }
 
@@ -1511,7 +1351,6 @@ img {
   .subsribe {
     margin-left: 80px;
     align-items: flex-start;
-    flex-direction: column;
   }
 
   .footer-form {
@@ -1531,40 +1370,12 @@ img {
 
   /**-----FILTERS-------*/
 
-  .portfolio-section {
-    padding-top: 96px;
-    padding-bottom: 120px;
-  }
-
-  .filtr-container {
-    justify-content: center;
-  }
-
   .filter-menu {
-    display: flex;
-    margin-bottom: 72px;
-    margin-left: auto;
-    margin-right: auto;
     gap: 24px;
     justify-content: center;
-    align-items: center;
-  }
-  .filter-item {
   }
 
   .button-filter {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--primary-brand);
-    background: var(--light);
-    cursor: pointer;
-    border: 1px solid #e7e9fc;
-    display: block;
-    border-radius: 4px;
-    padding: 12px 24px;
     transition: background-color var(--transition), color var(--transition),
       border-color var(--transition), box-shadow var(--transition);
   }
@@ -1581,18 +1392,15 @@ img {
   /**--------IMAGES-----------*/
 
   .portfolio-menu {
-    display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
   }
   .portfolio-item {
-    background: #ffffff;
     width: calc((100% - 48px) / 3);
     box-shadow: none;
   }
 
   .portfolio-link {
-    display: block;
     transition: box-shadow var(--transition);
   }
 
