@@ -1282,6 +1282,7 @@ img {
   }
   .goals-item-text {
     width: 264px;
+font-weight: 400;
   }
 
   /**-----------------WHAT?-------------*/
@@ -1367,6 +1368,7 @@ img {
 
   .logo {
     margin-right: 120px;
+    margin-bottom: 0;
     align-items: flex-start;
   }
 
@@ -1381,6 +1383,7 @@ img {
 
 .social-footer {
     margin-left: 0;
+    margin-bottom: 0;
 }
 
   .social-footer {
